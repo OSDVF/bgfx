@@ -179,7 +179,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			imguiEndFrame();
 			// Set view 0 default viewport.
