@@ -2046,7 +2046,7 @@ public:
 				, uint16_t(m_viewState.m_height)
 				);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			ImGui::SetNextWindowPos(
 				  ImVec2(m_viewState.m_width - 256.0f, 10.0f)

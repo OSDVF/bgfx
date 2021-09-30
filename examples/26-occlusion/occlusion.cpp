@@ -184,7 +184,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this
+			showDebugDialog(this
 				, !m_occlusionQuerySupported
 				? "Occlusion query is not supported."
 				: NULL

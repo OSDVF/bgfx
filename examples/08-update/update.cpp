@@ -532,7 +532,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			ImGui::SetNextWindowPos (ImVec2( 10.0f, 270.0f), ImGuiCond_FirstUseEver);
 			ImGui::SetNextWindowSize(ImVec2(150.0f,  70.0f), ImGuiCond_FirstUseEver);

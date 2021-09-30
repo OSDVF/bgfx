@@ -282,7 +282,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this
+			showDebugDialog(this
 				, !m_mrtSupported
 				? "MRT or frame buffer texture format are not supported."
 				: NULL

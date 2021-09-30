@@ -409,7 +409,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			imguiEndFrame();
 		}

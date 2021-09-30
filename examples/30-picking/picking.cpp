@@ -203,7 +203,7 @@ public:
 			const bgfx::Caps* caps = bgfx::getCaps();
 			bool blitSupport = 0 != (caps->supported & BGFX_CAPS_TEXTURE_BLIT);
 
-			showExampleDialog(this
+			showDebugDialog(this
 				, !blitSupport
 				? "BGFX_CAPS_TEXTURE_BLIT is not supported."
 				: NULL

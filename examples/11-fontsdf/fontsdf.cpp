@@ -152,7 +152,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			ImGui::SetNextWindowPos(
 				  ImVec2(m_width - m_width / 5.0f - 10.0f, 10.0f)

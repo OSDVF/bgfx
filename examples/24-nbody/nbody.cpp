@@ -264,7 +264,7 @@ public:
 				, uint16_t(m_height)
 				);
 
-			showExampleDialog(this
+			showDebugDialog(this
 				, !m_computeSupported
 				? "Compute is not supported."
 				: NULL
