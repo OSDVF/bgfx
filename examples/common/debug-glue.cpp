@@ -124,9 +124,6 @@ static bool s_showStats = false;
 
 void showDebugDialog(entry::AppI* _app, const char* _errorText)
 {
-	char temp[1024];
-	bx::snprintf(temp, BX_COUNTOF(temp), "Example: %s", _app->getName() );
-
 	ImGui::SetNextWindowPos(
 		  ImVec2(10.0f, 50.0f)
 		, ImGuiCond_FirstUseEver
@@ -136,7 +133,7 @@ void showDebugDialog(entry::AppI* _app, const char* _errorText)
 		, ImGuiCond_FirstUseEver
 		);
 
-	ImGui::Begin(temp);
+	ImGui::Begin(_app->getName());
 
 	ImGui::TextWrapped("%s", _app->getDescription() );
 

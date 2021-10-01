@@ -198,7 +198,7 @@ public:
 				, uint16_t(m_height)
 			);
 
-			showExampleDialog(this);
+			showDebugDialog(this);
 
 			int64_t now = bx::getHPCounter();
 			static int64_t last = now;
