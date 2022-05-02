@@ -715,6 +715,8 @@ restart:
 							_mouse->m_mx = mouse->m_mx;
 							_mouse->m_my = mouse->m_my;
 							_mouse->m_mz = mouse->m_mz;
+							_mouse->xrel = mouse->xrel;
+							_mouse->yrel = mouse->yrel;
 							if (!mouse->m_move)
 							{
 								_mouse->m_buttons[mouse->m_button] = mouse->m_down;

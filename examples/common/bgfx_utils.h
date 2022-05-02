@@ -34,6 +34,7 @@ bgfx::TextureHandle loadTexture(const char* _name, uint64_t _flags = BGFX_TEXTUR
 
 ///
 bimg::ImageContainer* imageLoad(const char* _filePath, bgfx::TextureFormat::Enum _dstFormat);
+static void imageReleaseCb(void* _ptr, void* _userData);
 
 ///
 void calcTangents(void* _vertices, uint16_t _numVertices, bgfx::VertexLayout _layout, const uint16_t* _indices, uint32_t _numIndices);

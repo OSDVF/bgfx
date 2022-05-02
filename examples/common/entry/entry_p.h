@@ -146,6 +146,8 @@ namespace entry
 	{
 		ENTRY_IMPLEMENT_EVENT(MouseEvent, Event::Mouse);
 
+		int32_t xrel;
+		int32_t yrel;
 		int32_t m_mx;
 		int32_t m_my;
 		int32_t m_mz;
@@ -243,12 +245,14 @@ namespace entry
 			m_queue.push(ev);
 		}
 
-		void postMouseEvent(WindowHandle _handle, int32_t _mx, int32_t _my, int32_t _mz)
+		void postMouseEvent(WindowHandle _handle, int32_t _mx, int32_t _my, int32_t _mz, int32_t xrel=0, int32_t yrel=0)
 		{
 			MouseEvent* ev = BX_NEW(getAllocator(), MouseEvent)(_handle);
 			ev->m_mx     = _mx;
 			ev->m_my     = _my;
 			ev->m_mz     = _mz;
+			ev->xrel = xrel;
+			ev->yrel = yrel;
 			ev->m_button = MouseButton::None;
 			ev->m_down   = false;
 			ev->m_move   = true;
@@ -263,6 +267,8 @@ namespace entry
 			ev->m_mz     = _mz;
 			ev->m_button = _button;
 			ev->m_down   = _down;
+			ev->xrel = 0;
+			ev->yrel = 0;
 			ev->m_move   = false;
 			m_queue.push(ev);
 		}

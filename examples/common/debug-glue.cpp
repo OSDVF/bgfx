@@ -125,11 +125,11 @@ static bool s_showStats = false;
 void showDebugDialog(entry::AppI* _app, const char* _errorText)
 {
 	ImGui::SetNextWindowPos(
-		  ImVec2(10.0f, 50.0f)
+		  ImVec2(460.0f, 00.0f)
 		, ImGuiCond_FirstUseEver
 		);
 	ImGui::SetNextWindowSize(
-		  ImVec2(300.0f, 210.0f)
+		  ImVec2(300.0f, 180.0f)
 		, ImGuiCond_FirstUseEver
 		);
 
