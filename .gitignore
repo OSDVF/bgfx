@@ -1,4 +1,9 @@
-.build
+.build/*
+!.build/projects
+.build/projects/*
+!.build/projects/vs2017/
+.build/projects/vs2017/*
+!.build/projects/vs2017/*.vcxproj
 .debug
 .DS_Store
 .git
